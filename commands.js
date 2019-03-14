@@ -26,8 +26,8 @@ function evaluateCmd(userInput){
       commandLibrary.tail(userInputArray.slice(1));
       break;
 
-    case default:
-      console.log("Error occurred: you entered non-existent command")
+    default:
+      console.log("Error: command entered does not exist. Please try again.")
 
   }
 }
@@ -61,7 +61,6 @@ const commandLibrary = {
       done(result);
     })
   }
-
 
 };
 
