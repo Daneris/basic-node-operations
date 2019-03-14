@@ -1,0 +1,22 @@
+### Questions
+
+> Run the commands sort, wc and uniq on the commands.js file. Explain how they work and what the output was.
+
+- Sort: sorts the contents of a file in alpha or numerical order.
+- Uniq: only prints the unique lines within a file
+- wc:  outputs the number of lines, character count, and bytes
+
+> Using the pipe (|) connect at least two commands and run it on commands.js. Explain what the output was and why the
+specific data was outputted.
+
+uniq bash.js | sort
+
+This outputted all of the unique lines, sorted in alphabetical order.
+
+> Given a string, reverse the order of characters in each word within a sentence while maintaining the original word order and whitespace and return the string. To improve your problem-solving experience, use the suggested functions to solve the problem.
+
+function reverseString(input){
+  return input.split("").reverse().join("");
+    };
+  
+ console.log(reverseString("this is great"));
